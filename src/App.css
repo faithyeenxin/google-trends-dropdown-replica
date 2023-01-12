@@ -1,0 +1,97 @@
+/* RESET CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: #212529;
+}
+
+.nav-area {
+  max-width: 1280px;
+  display: flex;
+  background-color: beige;
+  padding: 10px 0px;
+  margin: 0 auto;
+  border-width: 1px;
+}
+
+.nav-item {
+  display: flex;
+  margin: 0px 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.menu-item {
+  position: relative;
+  border-radius: 20px;
+  padding: 2px 30px;
+  margin: 0px 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.menu-item:hover {
+  background-color: #bbcf86;
+  cursor: pointer;
+}
+
+.submenu {
+  background-color: beige;
+  position: absolute;
+  margin: 0px 5px;
+  font-size: 20px;
+  top: 4%;
+  padding: 0.5rem 0;
+  border-radius: 20px;
+  text-align: center;
+  display: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.submenu-dropdown {
+  background-color: beige;
+  position: absolute;
+  left: 100%;
+  top: 40%;
+  border-radius: 9px;
+  display: none;
+}
+
+.submenu.show {
+  display: block;
+}
+
+.submenu-dropdown.show {
+  display: block;
+}
+
+.arrow::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.28em;
+  vertical-align: 0.09em;
+  border-top: 0.42em solid;
+  border-right: 0.32em solid transparent;
+  border-left: 0.32em solid transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
